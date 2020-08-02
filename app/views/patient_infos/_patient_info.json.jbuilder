@@ -1,0 +1,2 @@
+json.extract! patient_info, :id, :patient_id, :hospital_state_id, :birth_state_id, :residence_state_id, :residence_municipality_id, :update_date, :hospitalization_date, :symptoms_date, :death_date, :intubated, :pneumonia, :age, :nationality, :pregnant, :native_language, :diabetes, :epoc, :asthma, :immunosuppression, :hypertension, :other_complication, :cardiovascular, :obesity, :cronic_renal, :tabaquism, :other_case, :result, :migrant, :uci, :nationality_country, :created_at, :updated_at
+json.url patient_info_url(patient_info, format: :json)

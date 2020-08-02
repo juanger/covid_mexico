@@ -1,0 +1,159 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @patient_info.patient_id %>
+</p>
+
+<p>
+  <strong>Hospital state:</strong>
+  <%= @patient_info.hospital_state.name %>
+</p>
+
+<p>
+  <strong>Birth state:</strong>
+  <%= @patient_info.birth_state.name %>
+</p>
+
+<p>
+  <strong>Residence state:</strong>
+  <%= @patient_info.residence_state.name %>
+</p>
+
+<p>
+  <strong>Residence municipality:</strong>
+  <%= @patient_info.residence_municipality.name %>
+</p>
+
+<p>
+  <strong>Update date:</strong>
+  <%= @patient_info.update_date %>
+</p>
+
+<p>
+  <strong>Hospitalization date:</strong>
+  <%= @patient_info.hospitalization_date %>
+</p>
+
+<p>
+  <strong>Symptoms date:</strong>
+  <%= @patient_info.symptoms_date %>
+</p>
+
+<p>
+  <strong>Death date:</strong>
+  <%= @patient_info.death_date %>
+</p>
+
+<p>
+  <strong>Intubated:</strong>
+  <%= @patient_info.intubated %>
+</p>
+
+<p>
+  <strong>Pneumonia:</strong>
+  <%= @patient_info.pneumonia %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @patient_info.gender %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @patient_info.age %>
+</p>
+
+<p>
+  <strong>Nationality:</strong>
+  <%= @patient_info.nationality %>
+</p>
+
+<p>
+  <strong>Pregnant:</strong>
+  <%= @patient_info.pregnant %>
+</p>
+
+<p>
+  <strong>Native language:</strong>
+  <%= @patient_info.native_language %>
+</p>
+
+<p>
+  <strong>Diabetes:</strong>
+  <%= @patient_info.diabetes %>
+</p>
+
+<p>
+  <strong>Epoc:</strong>
+  <%= @patient_info.epoc %>
+</p>
+
+<p>
+  <strong>Asthma:</strong>
+  <%= @patient_info.asthma %>
+</p>
+
+<p>
+  <strong>Immunosuppression:</strong>
+  <%= @patient_info.immunosuppression %>
+</p>
+
+<p>
+  <strong>Hypertension:</strong>
+  <%= @patient_info.hypertension %>
+</p>
+
+<p>
+  <strong>Other complication:</strong>
+  <%= @patient_info.other_complication %>
+</p>
+
+<p>
+  <strong>Cardiovascular:</strong>
+  <%= @patient_info.cardiovascular %>
+</p>
+
+<p>
+  <strong>Obesity:</strong>
+  <%= @patient_info.obesity %>
+</p>
+
+<p>
+  <strong>Cronic renal:</strong>
+  <%= @patient_info.cronic_renal %>
+</p>
+
+<p>
+  <strong>Tabaquism:</strong>
+  <%= @patient_info.tabaquism %>
+</p>
+
+<p>
+  <strong>Other case:</strong>
+  <%= @patient_info.other_case %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @patient_info.result %>
+</p>
+
+<p>
+  <strong>Migrant:</strong>
+  <%= @patient_info.migrant %>
+</p>
+
+<p>
+  <strong>Uci:</strong>
+  <%= @patient_info.uci %>
+</p>
+
+<p>
+  <strong>nationality country:</strong>
+  <%= @patient_info.nationality_country %>
+</p>
+
+<%= link_to 'Edit', edit_patient_info_path(@patient_info) %> |
+<%= link_to 'Back', patient_infos_path %>

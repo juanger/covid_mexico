@@ -1,0 +1,65 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  patient: one
+  hospital_state: one
+  birth_state: one
+  residence_state: one
+  residence_municipality: one
+  update_date: 2020-08-02
+  hospitalization_date: 2020-08-02
+  symptoms_date: 2020-08-02
+  death_date: 2020-08-02
+  intubated: 1
+  pneumonia: 1
+  age: 1
+  nationality: 1
+  pregnant: 1
+  native_language: 1
+  diabetes: 1
+  epoc: 1
+  asthma: 1
+  immunosuppression: 1
+  hypertension: 1
+  other_complication: 1
+  cardiovascular: 1
+  obesity: 1
+  cronic_renal: 1
+  tabaquism: 1
+  other_case: 1
+  result: 1
+  migrant: 1
+  uci: 1
+  nationality_country: MyString
+
+two:
+  patient: two
+  hospital_state: two
+  birth_state: two
+  residence_state: two
+  residence_municipality: two
+  update_date: 2020-08-02
+  hospitalization_date: 2020-08-02
+  symptoms_date: 2020-08-02
+  death_date: 2020-08-02
+  intubated: 1
+  pneumonia: 1
+  age: 1
+  nationality: 1
+  pregnant: 1
+  native_language: 1
+  diabetes: 1
+  epoc: 1
+  asthma: 1
+  immunosuppression: 1
+  hypertension: 1
+  other_complication: 1
+  cardiovascular: 1
+  obesity: 1
+  cronic_renal: 1
+  tabaquism: 1
+  other_case: 1
+  result: 1
+  migrant: 1
+  uci: 1
+  nationality_country: MyString

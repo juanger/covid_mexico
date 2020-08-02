@@ -1,0 +1,167 @@
+<%= form_with(model: patient_info, local: true) do |form| %>
+  <% if patient_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(patient_info.errors.count, "error") %> prohibited this patient_info from being saved:</h2>
+
+      <ul>
+        <% patient_info.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :patient_id %>
+    <%= form.text_field :patient_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hospital_state_id %>
+    <%= form.text_field :hospital_state_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_state_id %>
+    <%= form.text_field :birth_state_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :residence_state_id %>
+    <%= form.text_field :residence_state_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :residence_municipality_id %>
+    <%= form.text_field :residence_municipality_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :update_date %>
+    <%= form.date_select :update_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hospitalization_date %>
+    <%= form.date_select :hospitalization_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :symptoms_date %>
+    <%= form.date_select :symptoms_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :death_date %>
+    <%= form.date_select :death_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :intubated %>
+    <%= form.number_field :intubated %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pneumonia %>
+    <%= form.number_field :pneumonia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nationality %>
+    <%= form.number_field :nationality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pregnant %>
+    <%= form.number_field :pregnant %>
+  </div>
+
+  <div class="field">
+    <%= form.label :native_language %>
+    <%= form.number_field :native_language %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diabetes %>
+    <%= form.number_field :diabetes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :epoc %>
+    <%= form.number_field :epoc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :asthma %>
+    <%= form.number_field :asthma %>
+  </div>
+
+  <div class="field">
+    <%= form.label :immunosuppression %>
+    <%= form.number_field :immunosuppression %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hypertension %>
+    <%= form.number_field :hypertension %>
+  </div>
+
+  <div class="field">
+    <%= form.label :other_complication %>
+    <%= form.number_field :other_complication %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cardiovascular %>
+    <%= form.number_field :cardiovascular %>
+  </div>
+
+  <div class="field">
+    <%= form.label :obesity %>
+    <%= form.number_field :obesity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cronic_renal %>
+    <%= form.number_field :cronic_renal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tabaquism %>
+    <%= form.number_field :tabaquism %>
+  </div>
+
+  <div class="field">
+    <%= form.label :other_case %>
+    <%= form.number_field :other_case %>
+  </div>
+
+  <div class="field">
+    <%= form.label :result %>
+    <%= form.number_field :result %>
+  </div>
+
+  <div class="field">
+    <%= form.label :migrant %>
+    <%= form.number_field :migrant %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uci %>
+    <%= form.number_field :uci %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nationality_country %>
+    <%= form.text_field :nationality_country %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

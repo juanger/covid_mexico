@@ -1,0 +1,87 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Patient Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>Hospital state</th>
+      <th>Birth state</th>
+      <th>Residence state</th>
+      <th>Residence municipality</th>
+      <th>Update date</th>
+      <th>Hospitalization date</th>
+      <th>Symptoms date</th>
+      <th>Death date</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Nationality</th>
+      <th>Intubated</th>
+      <th>Pneumonia</th>
+      <th>Pregnant</th>
+      <th>Native language</th>
+      <th>Diabetes</th>
+      <th>Epoc</th>
+      <th>Asthma</th>
+      <th>Immunosuppression</th>
+      <th>Hypertension</th>
+      <th>Other complication</th>
+      <th>Cardiovascular</th>
+      <th>Obesity</th>
+      <th>Cronic renal</th>
+      <th>Tabaquism</th>
+      <th>Other case</th>
+      <th>Result</th>
+      <th>Migrant</th>
+      <th>Uci</th>
+      <th>nationality country</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @patient_infos.each do |patient_info| %>
+      <tr>
+        <td><%= patient_info.patient_id %></td>
+        <td><%= patient_info.hospital_state.name %></td>
+        <td><%= patient_info.birth_state.name %></td>
+        <td><%= patient_info.residence_state.name %></td>
+        <td><%= patient_info.residence_municipality.name %></td>
+        <td><%= patient_info.update_date %></td>
+        <td><%= patient_info.hospitalization_date %></td>
+        <td><%= patient_info.symptoms_date %></td>
+        <td><%= patient_info.death_date %></td>
+        <td><%= patient_info.gender %></td>
+        <td><%= patient_info.age %></td>
+        <td><%= patient_info.nationality %></td>
+        <td><%= patient_info.intubated %></td>
+        <td><%= patient_info.pneumonia %></td>
+        <td><%= patient_info.pregnant %></td>
+        <td><%= patient_info.native_language %></td>
+        <td><%= patient_info.diabetes %></td>
+        <td><%= patient_info.epoc %></td>
+        <td><%= patient_info.asthma %></td>
+        <td><%= patient_info.immunosuppression %></td>
+        <td><%= patient_info.hypertension %></td>
+        <td><%= patient_info.other_complication %></td>
+        <td><%= patient_info.cardiovascular %></td>
+        <td><%= patient_info.obesity %></td>
+        <td><%= patient_info.cronic_renal %></td>
+        <td><%= patient_info.tabaquism %></td>
+        <td><%= patient_info.other_case %></td>
+        <td><%= patient_info.result %></td>
+        <td><%= patient_info.migrant %></td>
+        <td><%= patient_info.uci %></td>
+        <td><%= patient_info.nationality_country %></td>
+        <td><%= link_to 'Show', patient_info %></td>
+        <td><%= link_to 'Edit', edit_patient_info_path(patient_info) %></td>
+        <td><%= link_to 'Destroy', patient_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Patient Info', new_patient_info_path %>
