@@ -87,7 +87,7 @@ def clean(patient_info)
   patient_info[:residence_municipality_id] = "#{state}999".to_i
 end
 
-CSV.foreach(file_name, headers: true) { |row|
+CSV.foreach(file_name, 'r:ISO-8859-1:UTF-8', headers: true) { |row|
   death_date = if row["FECHA_DEF"] == "9999-99-99"
     nil
   else
